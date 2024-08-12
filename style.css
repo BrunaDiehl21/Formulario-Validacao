@@ -1,0 +1,123 @@
+body{
+    background-image: url(bg-repeat.jpg);
+    background-repeat: repeat-x;
+    width: 100vw;
+    height: 100vh;
+    background-size: contain;
+}
+
+.container{
+    padding-right: 240px;
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+.container .textos{
+    width: 800px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.container .textos h1{
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-size: 50px;
+    color: #fff;
+}
+
+.container .textos h2{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 35px;
+    color: #fff;
+}
+
+.container .formulario{
+    background-color: #fff;
+    width: 600px;
+    height: 800px;
+}
+
+.formulario form{
+    padding: 25px;
+    width: 600px;
+    height: 800px;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.formulario form input{
+    width: 550px;
+    height: 60px;
+    font-size: 40px;
+    border: 2px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.formulario form textarea{
+    width: 550px;
+    height: 260px;
+    font-size: 40px;
+    border: 2px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.formulario form p{
+    font-family: "Roboto", sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.container .formulario #nomeSpan{
+    color: #F52E2E;
+}
+
+.container .formulario #emailSpan{
+    color: #F52E2E;
+}
+
+.container .formulario #telefoneSpan{
+    color: #F52E2E;
+}
+
+.container .formulario #mensagemSpan{
+    color: #F52E2E;
+}
+
+.container .formulario .corCampoVazio{
+    border: 2px solid #F52E2E;
+}
+
+.container .formulario .corCampoCheio {
+    border: 2px solid #00C22B;
+}
+
+.formulario form button{
+    height: 60px;
+    border: none;
+    background-color:#3CCC87;
+    color: #fff;
+    font-size: 35px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media (min-width: 1024px){
+    .container{
+        padding-left: 200px;
+    }
+}
